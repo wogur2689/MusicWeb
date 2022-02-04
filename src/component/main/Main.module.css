@@ -1,0 +1,42 @@
+/* section */
+.section {
+    height: 900px;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    position: relative;
+}
+.section .main {
+    position: absolute;
+    position: relative;
+    width: 90%;
+    height: 100%;
+    display: inline-block;
+    position: relative;
+    z-index: 10;
+}
+.List {
+    position: absolute;
+    display: block;
+    z-index: 20;
+}
+.section .main .music_img {
+    position: absolute;
+    top: 5%;
+    left: 30%;
+    right: 40%;
+    display: block;
+    border: 0.1px solid black;
+    border-radius: 50%;
+    width: 400px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.Information {
+    position: absolute;
+}
+.Var {
+    position: absolute;
+}

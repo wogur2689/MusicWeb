@@ -1,0 +1,36 @@
+.music_var {
+    position: relative;
+    top: 10%;
+    left: 0;
+}
+.time1 {
+    position: absolute;
+    top: -100%;
+    left: 93%;
+    font-weight: 700;
+}
+.time2 {
+    position: absolute;
+    top: -100%;
+    left: 5%;
+    font-weight: 700;
+}
+.music_var .max_time {
+    position: absolute;
+    position: relative;
+    top: 50%;
+    left: auto;
+    right: auto;
+    display: block;
+    width: 90%;
+    height: 20px;
+    background-color: black;
+    margin-top: 20px;
+    margin-left: 5%;
+}
+.date_time {
+    position: absolute;
+    width: 60%;
+    height: 100%;
+    background-color: green;
+}
