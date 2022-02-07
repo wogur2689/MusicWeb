@@ -26,7 +26,7 @@
     overflow: hidden;
     height: 100%;
     bottom: -1px;
-    background-image: linear-gradient(to top, #402565  30%, #30BE96 90%);
+    background-image: linear-gradient(45deg, #000066 , #6699FF);
     z-index: 20;
     opacity: 0.5;
 }
@@ -36,7 +36,7 @@
     overflow: hidden;
     height: 100%;
     bottom: -1px;
-    background-image: linear-gradient(to top, #402565 30%, #30BE96  90%);
+    background-image: linear-gradient(45deg, #000066, #6699FF);
     z-index: 15;
     opacity: 0.75;
 }
@@ -46,7 +46,7 @@
     overflow: hidden;
     height: 100%;
     bottom: -1px;
-    background-image: linear-gradient(to top, #402565 30%, #30BE96 90%);
+    background-image: linear-gradient(45deg, #000066, #6699FF);
     z-index: 10;
 }
 

@@ -3,15 +3,19 @@
     top: 10%;
     left: 0;
 }
+.icon {
+    width: 60px;
+    height: 60px;
+}
 .time1 {
     position: absolute;
-    top: -100%;
+    top: 60%;
     left: 93%;
     font-weight: 700;
 }
 .time2 {
     position: absolute;
-    top: -100%;
+    top: 60%;
     left: 5%;
     font-weight: 700;
 }
