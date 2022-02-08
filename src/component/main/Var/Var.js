@@ -1,13 +1,21 @@
 import styles from './Var.module.css';
 import { IoMdPlayCircle } from "react-icons/io";
 import { IoStopCircle } from "react-icons/io5";
+import { useState } from 'react';
 
 function Var() {
+    const [play, setPlay] = useState(false);
+    function playing () {
+        setPlay(play => !play)
+    }
+
     return (
         <div className={styles.music_var}> 
             <div className={styles.time1}>3:32</div>
-                <IoMdPlayCircle className={styles.icon}/>
-                <IoStopCircle className={styles.icon}/>
+                <div className={styles.icons}>
+                    {play ? <IoMdPlayCircle className={styles.icon}/>:<IoStopCircle className={styles.icon}/>}
+                    <button className={styles.playButton} onClick={playing}></button> 
+                </div>
                 <div className={styles.max_time}>
                     <div className={styles.date_time}></div>
                 </div>

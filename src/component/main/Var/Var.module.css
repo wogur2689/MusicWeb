@@ -2,10 +2,25 @@
     position: relative;
     top: 10%;
     left: 0;
+    vertical-align: center;
+}
+.music_var .icons {
+    position: absolute;
+    left: 45%;
+    position: relative;
+    width: 100px;
 }
 .icon {
     width: 60px;
     height: 60px;
+}
+.playButton {
+    position: absolute;
+    top: 10%;
+    left: 25%;
+    width: 50px;
+    height: 50px;
+    opacity: 0.0;
 }
 .time1 {
     position: absolute;
