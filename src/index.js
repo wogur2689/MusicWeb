@@ -8,6 +8,7 @@ ReactDOM.render(
   <React.StrictMode>
     <App />
   </React.StrictMode>,
+  <ReactJkMusicPlayer {...options} />,
   document.getElementById('root')
 );
 
