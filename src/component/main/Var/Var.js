@@ -10,7 +10,7 @@ function Var() {
     function playing () {
         setPlay(play => !play)
         if(play === true) {
-            //sound.play();
+            sound.play();
         }
     }
 
