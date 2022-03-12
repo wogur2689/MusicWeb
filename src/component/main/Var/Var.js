@@ -2,6 +2,7 @@ import styles from './Var.module.css';
 import { IoMdPlayCircle } from "react-icons/io";
 import { IoStopCircle } from "react-icons/io5";
 import { useState } from 'react';
+import ReactAudioPlayer from 'react-audio-player';
 
 function Var() {
 
@@ -10,7 +11,7 @@ function Var() {
     function playing () {
         setPlay(play => !play)
         if(play === true) {
-            sound.play();
+            
         }
     }
 
@@ -28,3 +29,6 @@ function Var() {
         </div>
     );
 }
+
+export default Var;
+

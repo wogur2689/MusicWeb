@@ -1,7 +1,7 @@
-import WaveWrapper from './WaveWrapper/WaveWrapper';
+import WaveWrapper from './waveWrapper/WaveWrapper';
 import List from './list/List';
 import Information from './Information/Information';
-import Var from './Var/Var';
+import Var from './var/Var';
 import styles from './Main.module.css';
 
 function Main() {
