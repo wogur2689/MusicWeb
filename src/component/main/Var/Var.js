@@ -6,12 +6,17 @@ import ReactAudioPlayer from 'react-audio-player';
 
 function Var() {
 
-    const [play, setPlay] = useState(false);
+    const [play, setPlay] = useState(true);
 
-    function playing () {
+    function playing() {
         setPlay(play => !play)
         if(play === true) {
-            
+            <ReactAudioPlayer
+            src="../../data/노을.mp3"
+            autoPlay
+            controls
+            volume="5.0"
+            />
         }
     }
 
