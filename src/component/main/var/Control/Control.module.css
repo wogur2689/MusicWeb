@@ -1,0 +1,10 @@
+.controlPanel {
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.timer {
+    font-size: 30px;
+    font-weight: 200;
+    color: rgb(196, 196, 196);
+}
