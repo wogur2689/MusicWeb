@@ -2,7 +2,10 @@
     "data": [
         {
             "id": "1",
-            "title" : "비행기"
+            "title" : "노을",
+            "singer": "사운드포엠",
+            "src": "../../data/노을.mp3",
+            "img": "../../img/sunset.jpg"
         }, 
         {
             "id": "2",

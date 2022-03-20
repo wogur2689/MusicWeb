@@ -30,7 +30,7 @@ function Var() {
         if (isPlaying) {
         setIsPlaying(false)
         audio.pause()
-        }
+        } 
     }
 
     const getCurrDuration = (e) => {

@@ -24,7 +24,7 @@
     top: 0;
 }
 .music_list .music_list_item .music_list_title {
-    width: 248px;
+    width: 180px;
     height: 49px;
     border-bottom: 1px solid black;
     font-size: 30px;
@@ -34,10 +34,46 @@
     top: 0;
 }
 .music_list .music_list_item .music_list_singer {
-    width: 248px;
+    width: 180px;
     height: 50px;
     font-size: 20px;
     position: absolute;
     left: 100px;
     top: 50px;
+}
+.music_list .music_list_item .music_selection {
+    width: 67px;
+    height: 99px;
+    background-color: orange;
+    border: solid black 1px;
+    border-right: none;
+    border-bottom: none;
+    position: absolute;
+    left: 280px;
+    top: 0;
+    cursor: pointer;
+    line-height: 100px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.music_list .music_list_item .music_not_selected {
+    width: 67px;
+    height: 99px;
+    background-color: greenyellow;
+    border: solid black 1px;
+    border-right: none;
+    border-bottom: none;
+    position: absolute;
+    left: 280px;
+    top: 0;
+    cursor: pointer;
+    line-height: 100px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+}
+.music_list .music_list_item .music_selection:hover {
+    background-color: greenyellow;
 }
