@@ -41,39 +41,37 @@
     left: 100px;
     top: 50px;
 }
+.music_list .music_list_item label {
+    position: absolute;
+    left: 290px;
+    top: 70px;
+    font-size: 25px;
+    text-align: center;
+    font-weight: 700;
+}
 .music_list .music_list_item .music_selection {
-    width: 67px;
-    height: 99px;
-    background-color: orange;
-    border: solid black 1px;
-    border-right: none;
-    border-bottom: none;
     position: absolute;
-    left: 280px;
-    top: 0;
-    cursor: pointer;
-    line-height: 100px;
-    text-align: center;
-    font-weight: 700;
-    font-size: 20px;
+    left: -10px;
+    top: -70px;
 }
-
 .music_list .music_list_item .music_not_selected {
-    width: 67px;
-    height: 99px;
-    background-color: greenyellow;
-    border: solid black 1px;
-    border-right: none;
-    border-bottom: none;
     position: absolute;
-    left: 280px;
-    top: 0;
-    cursor: pointer;
-    line-height: 100px;
-    text-align: center;
-    font-weight: 700;
-    font-size: 20px;
+    left: -10px;
+    top: -70px;
 }
-.music_list .music_list_item .music_selection:hover {
+input[type=radio] {
+    width: 60px;
+    height: 70px;
+    border: 1px solid black;
+    background-color: orange;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+input[type=radio]:checked {
+    width: 60px;
+    height: 70px;
+    border: 1px solid black;
     background-color: greenyellow;
+    -webkit-appearance: none;
+    -moz-appearance: none;
 }
