@@ -1,23 +1,32 @@
 {
-    "data": [
+    "music": [
         {
             "id": "1",
             "title" : "노을",
             "singer": "사운드포엠",
-            "src": "../../data/노을.mp3",
-            "img": "../../img/sunset.jpg"
+            "src": "./music/sunset.mp3",
+            "img": "img/sunset.jpg"
         }, 
         {
             "id": "2",
-            "title" : "애국가"
+            "title" : "sunburst",
+            "singer": "Tobu & Itro",
+            "src" :"./music/sunburst.mp3",
+            "img" :"img/sunburst.PNG"
         }, 
         {
             "id": "3",
-            "title" : "곰세마리"
+            "title" : "movieStar",
+            "singer": "Red Pulse",
+            "src" :"./music/movieStar.mp3",
+            "img" :"img/movieStar.PNG"
         },
         {
             "id": "4",
-            "title" : "나비야"
+            "title" : "Infectious",
+            "singer": "Tobu",
+            "src" :"./music/Infectious.mp3",
+            "img" :"img/Infectious.PNG"
         }
     ]
 }
