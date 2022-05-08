@@ -1,1 +1,0 @@
-import data from './img/movieStar';
