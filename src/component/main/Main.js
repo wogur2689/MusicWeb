@@ -1,6 +1,6 @@
 import WaveWrapper from './waveWrapper/WaveWrapper';
 import List from './list/List';
-import Information from './Information/Information';
+import Information from './information/Information';
 import Var from './var/Var';
 import styles from './Main.module.css';
 import music from './data/musicData.json';

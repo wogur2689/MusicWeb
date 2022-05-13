@@ -1,6 +1,6 @@
 import styles from './Var.module.css';
 import { useState, useRef } from 'react';
-import song from "../../data/노을.mp3";
+//import song from "../../data/노을.mp3";
 import ControlPanel from "./Control/Control";
 import Slider from './Slider/Time';
 
@@ -43,14 +43,14 @@ function Var() {
 
     return (
         <div className={styles.music_var}> 
-            <audio
+            {/*<audio
                 ref={audioRef}
                 onTimeUpdate={getCurrDuration}
                 onLoadedData={(e) => {
                 setDuration(e.currentTarget.duration.toFixed(2))
                 }}
-                src={song}
-            ></audio>
+            src={song}
+            ></audio> */}
             <ControlPanel
                 play={play}
                 isPlaying={isPlaying}
