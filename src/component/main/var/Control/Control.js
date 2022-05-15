@@ -1,10 +1,8 @@
 import React from 'react';
-import { IoMdPlayCircle } from "react-icons/io";
-import { IoStopCircle } from "react-icons/io5";
 import styles from './Control.module.css';
 import Button from './Button';
 
-function ControlPanel({ play, isPlaying, duration, currentTime }) {
+function ControlPanel({ play, isPlaying, duration, currentTime}) {
 
     function secondsToHms(seconds) {
         if (!seconds) return '00 : 00';

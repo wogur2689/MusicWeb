@@ -8,8 +8,14 @@ function Var({targetMusic}) {
     const [isPlaying, setIsPlaying] = useState(false)
     const [duration, setDuration] = useState(0)
     const [currentTime, setCurrentTime] = useState(0)
+    const [id, setId] = useState(0);
     const song = `${process.env.PUBLIC_URL}/data/${targetMusic.src}`;
     console.log(targetMusic.src);
+
+    if(targetMusic.id !== id) {
+        setId(targetMusic.id);
+        setIsPlaying(false);
+    }
 
     const audioRef = useRef()
 
@@ -35,17 +41,16 @@ function Var({targetMusic}) {
     }
 
     const getCurrDuration = (e) => {
-        //const audio = audioRef.current
+        const audio = audioRef.current
         const percent = ((e.currentTarget.currentTime / e.currentTarget.duration) * 100).toFixed(2)
         const time = e.currentTarget.currentTime
 
         setPercentage(+percent)
         setCurrentTime(time.toFixed(2))
 
-        /* 무한반복
-        if(e.currentTarget.currentTime ==  e.currentTarget.duration)
+        //무한반복
+        if(e.currentTarget.currentTime === e.currentTarget.duration)
             audio.play();
-        */
     }
 
     return (
@@ -61,6 +66,7 @@ function Var({targetMusic}) {
             <ControlPanel
                 play={play}
                 isPlaying={isPlaying}
+                targetMusic={targetMusic}
                 duration={duration}
                 currentTime={currentTime}
             />
