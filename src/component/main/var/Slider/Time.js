@@ -2,10 +2,11 @@ import { useState, useRef, useEffect } from 'react';
 import './Time.module.css';
 import './thumb.module.css';
 
-function Slider({ percentage = 0, onChange }) {
+function Slider({ percentage = 0, onChange, targetMusic }) {
     const [position, setPosition] = useState(0);
     const [marginLeft, setMarginLeft] = useState(0);
     const [progressBarWidth, setProgressBarWidth] = useState(0);
+    const [id, setId] = useState(0);
 
     const rangeRef = useRef();
     const thumbRef = useRef();
@@ -19,6 +20,12 @@ function Slider({ percentage = 0, onChange }) {
         setPosition(percentage)
         setMarginLeft(centerThumb)
         setProgressBarWidth(centerProgressBar)
+        if(targetMusic.id !== id) {
+            setId(targetMusic.id);
+            setPosition(0);
+            setMarginLeft(0);
+            setProgressBarWidth(0);
+        }
     }, [percentage])
 
     return (

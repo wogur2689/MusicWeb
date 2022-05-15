@@ -1,14 +1,15 @@
 import styles from './Var.module.css';
 import { useState, useRef } from 'react';
-//import song from "../../data/노을.mp3";
 import ControlPanel from "./Control/Control";
 import Slider from './Slider/Time';
 
-function Var() {
+function Var({targetMusic}) {
     const [percentage, setPercentage] = useState(0)
     const [isPlaying, setIsPlaying] = useState(false)
     const [duration, setDuration] = useState(0)
     const [currentTime, setCurrentTime] = useState(0)
+    const song = `${process.env.PUBLIC_URL}/data/${targetMusic.src}`;
+    console.log(targetMusic.src);
 
     const audioRef = useRef()
 
@@ -20,7 +21,7 @@ function Var() {
 
     const play = () => {
         const audio = audioRef.current
-        audio.volume = 0.1
+        audio.volume = 0.5
 
         if (!isPlaying) {
         setIsPlaying(true)
@@ -34,53 +35,38 @@ function Var() {
     }
 
     const getCurrDuration = (e) => {
+        //const audio = audioRef.current
         const percent = ((e.currentTarget.currentTime / e.currentTarget.duration) * 100).toFixed(2)
         const time = e.currentTarget.currentTime
 
         setPercentage(+percent)
         setCurrentTime(time.toFixed(2))
+
+        /* 무한반복
+        if(e.currentTarget.currentTime ==  e.currentTarget.duration)
+            audio.play();
+        */
     }
 
     return (
         <div className={styles.music_var}> 
-            {/*<audio
+            {<audio
                 ref={audioRef}
                 onTimeUpdate={getCurrDuration}
                 onLoadedData={(e) => {
                 setDuration(e.currentTarget.duration.toFixed(2))
                 }}
-            src={song}
-            ></audio> */}
+                src={song}
+            ></audio> }
             <ControlPanel
                 play={play}
                 isPlaying={isPlaying}
                 duration={duration}
                 currentTime={currentTime}
             />
-            <Slider percentage={percentage} onChange={onChange} />
+            <Slider percentage={percentage} onChange={onChange} targetMusic={targetMusic}/>
         </div>
     );
 }
 
 export default Var;
-
-/*
-return (
-        <div className={styles.music_var}> 
-            <div className={styles.time1}>3:32</div>
-            <Slider percentage={percentage} onChange={onChange} />
-                <audio ref={audioPlayer} onTimeUpdate={getCurrDuration} onLoadedData={(e) => {
-         setDuration(e.currentTarget.duration.toFixed(2))
-        }} src={song}></audio>
-            <ControlPanel
-            play={play}
-            isPlaying={isPlaying}
-            duration={duration}
-            currentTime={currentTime}
-        />
-                <div className={styles.max_time}>
-                    <div className={styles.date_time}></div>
-                </div>
-            <div className={styles.time2}>0:00</div>
-        </div>
-    );*/
