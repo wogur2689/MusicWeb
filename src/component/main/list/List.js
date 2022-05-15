@@ -2,13 +2,14 @@ import { useState } from 'react';
 import styles from './List.module.css';
 import music from '../data/musicData.json';
 
-function List() {
+function List({dataFunction}) {
     const [selection, setSelection] = useState(true);
 
     const musicSelection = (e) => {
-        let current = document.getElementById(e.target.id);
-        console.log(current.id);
+        let current = e.target.id;
+        console.log(current);
         setSelection(!selection);
+        dataFunction(current);
     }
 
     return (
@@ -21,7 +22,7 @@ function List() {
                     <div className={styles.music_list_title}>{music.title}</div>
                     <div className={styles.music_list_singer}>{music.singer}</div>
                     <label>
-                        <input type="radio" id={`case` + music.id} className={selection === true ? styles.music_selection : styles.music_not_selected} onClick={musicSelection} name="music"/>선택
+                        <input type="radio" id={music.id} className={selection === true ? styles.music_selection : styles.music_not_selected} onClick={musicSelection} name="music"/>선택
                     </label>
                 </div>
             ))}
