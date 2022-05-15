@@ -25,12 +25,17 @@ function Main() {
         <div className={styles.section}>
             <WaveWrapper /> 
             <div className={styles.main}>
-                <List dataFunction={dataFunction} className={styles.List} />
+                <List dataFunction={dataFunction} 
+                    className={styles.List} />
                 <div className={styles.music_img}>
-                    <img src={`${process.env.PUBLIC_URL}/data/${targetMusic.img}`} width="100%" height="100%" alt="사진" />
+                    <img 
+                        src={`${process.env.PUBLIC_URL}/data/${targetMusic.img}`} 
+                        width="100%" 
+                        height="100%" 
+                        alt="사진" />
                 </div>
-                <Information className={styles.Information}/>
-                <Var className={styles.Var}/>
+                <Information targetMusic={targetMusic} className={styles.Information}/>
+                <Var targetMusic={targetMusic} className={styles.Var}/>
             </div>
         </div>
     );
