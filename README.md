@@ -69,7 +69,11 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
-# 개꿀잼 리액트
+# React MP3 (2021-12-05 ~ 2022-05-15)
+
 <hr>
 ## 현재 음악 목록
 - 노을
+- sunburst
+- movieStar
+- Infectious
