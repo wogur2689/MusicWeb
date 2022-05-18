@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/MusicWeb/static/css/main.7f4d9b9a.css",
+    "main.js": "/MusicWeb/static/js/main.a5ddb1b4.js",
+    "static/js/787.b384255a.chunk.js": "/MusicWeb/static/js/787.b384255a.chunk.js",
+    "index.html": "/MusicWeb/index.html",
+    "main.7f4d9b9a.css.map": "/MusicWeb/static/css/main.7f4d9b9a.css.map",
+    "main.a5ddb1b4.js.map": "/MusicWeb/static/js/main.a5ddb1b4.js.map",
+    "787.b384255a.chunk.js.map": "/MusicWeb/static/js/787.b384255a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7f4d9b9a.css",
+    "static/js/main.a5ddb1b4.js"
+  ]
+}
