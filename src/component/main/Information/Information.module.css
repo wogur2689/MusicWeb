@@ -1,4 +1,4 @@
-.music_information {
+.music_information { /* 데스크톱 */
     position: absolute;
     top: 5%;
     right: 5%;
@@ -20,4 +20,26 @@
     border-bottom: 1px solid black;
     font-size: 30px;
     font-weight: 700;
+}
+@media ( max-width: 1023px ) {
+    .music_information { /* 태블릿 */
+        display: none;
+    }
+    .music_information .music_title {
+        display: none;
+    }
+    .music_information .music_singer {
+        display: none;
+    }
+}
+@media ( max-width: 738px ) { /* 모바일 */
+    .music_information {
+        display: none;
+    }
+    .music_information .music_title {
+        display: none;
+    }
+    .music_information .music_singer {
+        display: none;
+    }
 }

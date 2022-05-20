@@ -1,5 +1,5 @@
 /* section */
-.section {
+.section { /* 데스크톱 */
     height: 900px;
     margin-top: 0;
     margin-left: auto;
@@ -38,12 +38,80 @@
 .section .main .music_img {
     object-fit: cover;
 }
-.Information {
+.information {
     position: absolute;
 }
 .Var {
     position: absolute;
 }
-.checkBtn {
-    display: none;
+@media ( max-width: 1023px ) {  /* 태블릿 */
+    .section {
+        height: 750px;
+        margin-top: 0;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        position: relative;
+    }
+    .section .main {
+        position: absolute;
+        position: relative;
+        width: 90%;
+        height: 100%;
+        display: inline-block;
+        position: relative;
+        z-index: 10;
+    }
+    .List {
+        position: absolute;
+        display: block;
+        z-index: 20;
+    }
+    .section .main .music_img {
+        position: absolute;
+        top: 5%;
+        left: 60%;
+        right: 20%;
+        display: block;
+        border: 0.1px solid black;
+        border-radius: 50%;
+        width: 300px;
+        height: 300px;
+        margin-left: auto;
+        margin-right: auto;
+        overflow: hidden;
+    }
+    .information {
+        display: none;
+    }
+}
+@media ( max-width: 738px ) { /* 모바일 */
+    .section {
+        height: 600px;
+        margin-top: 0;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        position: relative;
+    }
+    .section .main {
+        position: absolute;
+        position: relative;
+        width: 90%;
+        height: 100%;
+        display: inline-block;
+        position: relative;
+        z-index: 10;
+    }
+    .List {
+        position: absolute;
+        display: block;
+        z-index: 20;
+    }
+    .section .main .music_img {
+        display: none;
+    }
+    .information {
+        display: none;
+    }
 }

@@ -17,7 +17,7 @@ function List({dataFunction}) {
             {music.music.map((music) => (
                 <div key={music.id} className={styles.music_list_item}>
                     <div className={styles.music_list_img}>
-                        <img src={`${process.env.PUBLIC_URL}/data/${music.img}`} width="100px" height="100px" alt="사진"/>
+                        <img src={`${process.env.PUBLIC_URL}/data/${music.img}`} alt="사진"/>
                     </div>
                     <div className={styles.music_list_title}>{music.title}</div>
                     <div className={styles.music_list_singer}>{music.singer}</div>
