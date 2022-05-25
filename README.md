@@ -73,7 +73,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 <hr>
 ## 현재 음악 목록
-- 노을
-- sunburst
-- movieStar
-- Infectious
+- 노을   
+- sunburst   
+- movieStar   
+- Infectious   
